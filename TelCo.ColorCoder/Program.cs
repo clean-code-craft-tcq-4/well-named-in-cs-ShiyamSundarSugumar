@@ -124,7 +124,7 @@ namespace TelCo.ColorCoder
             MajorLength = colorMapMajor.Length;
             MinorLength = colorMapMinor.Length;
             int index = 1;
-            Console.WriteLine("| Index: | MajorColor\t | MinorColor\t|");
+            Console.WriteLine("| Index:  | MajorColor\t\t  | MinorColor\t\t  |");
             for (int i = 0; i < MajorLength; i++)
             {
                 int j = 0;
