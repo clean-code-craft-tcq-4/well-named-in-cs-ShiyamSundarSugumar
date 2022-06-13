@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Diagnostics;
 using System.Drawing;
-
 namespace TelCo.ColorCoder
 {
     /// <summary>
@@ -57,16 +56,19 @@ namespace TelCo.ColorCoder
                 throw new ArgumentOutOfRangeException(
                     string.Format("Argument PairNumber:{0} is outside the allowed range", pairNumber));
             }
-            
+
             // Find index of major and minor color from pair number
             int zeroBasedPairNumber = pairNumber - 1;
             int majorIndex = zeroBasedPairNumber / minorSize;
             int minorIndex = zeroBasedPairNumber % minorSize;
 
             // Construct the return val from the arrays
-            ColorPair pair = new ColorPair() { majorColor = colorMapMajor[majorIndex],
-                minorColor = colorMapMinor[minorIndex] };
-            
+            ColorPair pair = new ColorPair()
+            {
+                majorColor = colorMapMajor[majorIndex],
+                minorColor = colorMapMinor[minorIndex]
+            };
+
             // return the value
             return pair;
         }
@@ -113,8 +115,37 @@ namespace TelCo.ColorCoder
         /// Test code for the class
         /// </summary>
         /// <param name="args"></param>
+        /// 
+
+        void Print_table()
+        {
+            int MajorLength = 0, MinorLength = 0;
+
+            MajorLength = colorMapMajor.Length;
+            MinorLength = colorMapMinor.Length;
+            int index = 1;
+            Console.WriteLine("|\tIndex:\t\t|\tMajorColor:\t\t|\tMinorColor:\t\t|");
+            for (int i = 0; i < MajorLength; i++)
+            {
+                int j = 0;
+                for (; j < MinorLength; j++)
+                {
+                    Console.WriteLine("|\tIndex:{0}\t|\tMajorColor:{1}\t|\tMinorColor:{2}\t|", index, colorMapMajor[i], colorMapMinor[j]);
+                    index++;
+                }
+            }
+
+
+        }
         private static void Main(string[] args)
         {
+            Program MyClass = new Program();
+            ColorPair testPair = new ColorPair();
+
+            MyClass.Print_table();
+
+
+
             int pairNumber = 4;
             ColorPair testPair1 = Program.GetColorFromPairNumber(pairNumber);
             Console.WriteLine("[In]Pair Number: {0},[Out] Colors: {1}\n", pairNumber, testPair1);
