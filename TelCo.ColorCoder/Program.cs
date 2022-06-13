@@ -124,13 +124,13 @@ namespace TelCo.ColorCoder
             MajorLength = colorMapMajor.Length;
             MinorLength = colorMapMinor.Length;
             int index = 1;
-            Console.WriteLine("|\tIndex:\t\t|\tMajorColor\t\t|\tMinorColor\t\t|");
+            Console.WriteLine("| Index: | MajorColor\t | MinorColor\t|");
             for (int i = 0; i < MajorLength; i++)
             {
                 int j = 0;
                 for (; j < MinorLength; j++)
                 {
-                    Console.WriteLine("| {0}\t|\t {1} \t\t|\t {2} \t\t|", index, colorMapMajor[i], colorMapMinor[j]);
+                    Console.WriteLine("| {0}\t  | {1} \t\t  | {2} \t\t  |", index, colorMapMajor[i], colorMapMinor[j]);
                     index++;
                 }
             }
