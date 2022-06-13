@@ -130,7 +130,7 @@ namespace TelCo.ColorCoder
                 int j = 0;
                 for (; j < MinorLength; j++)
                 {
-                    Console.WriteLine("|\tIndex:{0}\t|\tMajorColor:{1}\t|\tMinorColor:{2}\t|", index, colorMapMajor[i], colorMapMinor[j]);
+                    Console.WriteLine("| {0}\t|\t {1} \t|\t {2} \t|", index, colorMapMajor[i], colorMapMinor[j]);
                     index++;
                 }
             }
