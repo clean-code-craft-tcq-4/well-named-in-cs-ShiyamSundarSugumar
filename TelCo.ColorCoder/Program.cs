@@ -37,7 +37,7 @@ namespace TelCo.ColorCoder
         /// <param name="args"></param>
         private static void Main(string[] args)
         {
-            Print_Manual.Table();
+            Print_Manual.Table(MajorColorList,MinorColorList);
             Main_Test_case.Test_case();
         }
     }
