@@ -6,7 +6,7 @@ namespace TelCo.ColorCoder
 {
   public class Main_Test_case
   {
-    internal void Test_case()
+    internal static void Test_case()
     {
       int pairNumber = 4;
       ColorPair testPair1 = Program.GetColorFromPairNumber(pairNumber);
