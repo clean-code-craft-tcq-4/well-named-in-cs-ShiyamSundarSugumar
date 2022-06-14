@@ -142,6 +142,7 @@ namespace TelCo.ColorCoder
             Print_Table MyTable = new Print_Table();
             MyTable.Table(colorMapMajor,colorMapMinor);
             
+            Main_Test_case.Test_case();
             
             /*
             
