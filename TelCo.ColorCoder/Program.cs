@@ -136,12 +136,8 @@ namespace TelCo.ColorCoder
         /// <param name="args"></param>
         private static void Main(string[] args)
         {
-            Program MyClass = new Program();
-            //MyClass.Print_table();
-            Console.WriteLine(colorMapMajor[0].ToString());
-            Print_Table MyTable = new Print_Table();
-            MyTable.Table(colorMapMajor,colorMapMinor);
             
+            Print_Manual.Table(colorMapMajor,colorMapMinor);
             Main_Test_case.Test_case();
             
             /*
