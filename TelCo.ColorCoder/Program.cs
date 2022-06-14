@@ -138,7 +138,8 @@ namespace TelCo.ColorCoder
         {
             //Program MyClass = new Program();
             //MyClass.Print_table();
-            Print_Table Table = new Print_Table();
+            Print_Table MyTable = new Print_Table();
+            MyTable.Table();
 
             int pairNumber = 4;
             ColorPair testPair1 = Program.GetColorFromPairNumber(pairNumber);
