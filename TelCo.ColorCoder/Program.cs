@@ -15,10 +15,10 @@ namespace TelCo.ColorCoder
         /// <summary>
         /// data type defined to hold the two colors of clor pair
         /// </summary>
-        public class ColorPair
+        internal class ColorPair
         {
-            public Color majorColor,minorColor;
-            public override string ToString()
+            internal Color majorColor,minorColor;
+            internal override string ToString()
             {
                 return string.Format("MajorColor:{0}, MinorColor:{1}", majorColor.Name, minorColor.Name);
             }
