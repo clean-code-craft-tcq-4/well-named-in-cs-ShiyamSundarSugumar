@@ -10,7 +10,7 @@ namespace TelCo.ColorCoder
         {
             // Find the major color in the array and get the index
             int majorIndex = -1;
-            for (int i = 0; i < colorMapMajor.Length; i++)
+            for (int i = 0; i < Program.colorMapMajor.Length; i++)
             {
                 if (colorMapMajor[i] == pair.majorColor)
                 {
@@ -21,9 +21,9 @@ namespace TelCo.ColorCoder
 
             // Find the minor color in the array and get the index
             int minorIndex = -1;
-            for (int i = 0; i < colorMapMinor.Length; i++)
+            for (int i = 0; i < Program.colorMapMinor.Length; i++)
             {
-                if (colorMapMinor[i] == pair.minorColor)
+                if (Program.colorMapMinor[i] == pair.minorColor)
                 {
                     minorIndex = i;
                     break;
