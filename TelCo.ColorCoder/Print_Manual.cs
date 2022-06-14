@@ -5,11 +5,11 @@ namespace TelCo.ColorCoder
 {
   internal class Print_Manual
   {
-      internal static void Table(Color[] colorMapMajor, Color[] colorMapMinor)
+      internal static void Table()
       {
           int MajorLength = 0, MinorLength = 0,index = 1;
-          MajorLength = colorMapMajor.Length;
-          MinorLength = colorMapMinor.Length;
+          MajorLength = Program.MajorColorList.Length;
+          MinorLength = Program.MinorColorList.Length;
           
           Console.WriteLine("| Index\t  |   MajorColor\t\t\t  |   MinorColor\t\t\t  |");
           Console.WriteLine("------------------------------------------------------------------------");
@@ -17,7 +17,7 @@ namespace TelCo.ColorCoder
           {
               for (int j = 0; j < MinorLength; j++)
               {
-                  Console.WriteLine("|   {0}\t  |   {1} \t\t  |   {2} \t\t  |", index, colorMapMajor[i], colorMapMinor[j]);
+                  Console.WriteLine("|   {0}\t  |   {1} \t\t  |   {2} \t\t  |", index, Program.MajorColorList[i],Program.MinorColorList[j]);
                   index++;
               }
           }
