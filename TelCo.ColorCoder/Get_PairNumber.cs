@@ -12,7 +12,7 @@ namespace TelCo.ColorCoder
             int majorIndex = -1;
             for (int i = 0; i < Program.colorMapMajor.Length; i++)
             {
-                if (colorMapMajor[i] == pair.majorColor)
+                if (Program.colorMapMajor[i] == pair.majorColor)
                 {
                     majorIndex = i;
                     break;
@@ -38,7 +38,7 @@ namespace TelCo.ColorCoder
 
             // Compute pair number and Return  
             // (Note: +1 in compute is because pair number is 1 based, not zero)
-            return (majorIndex * colorMapMinor.Length) + (minorIndex + 1);
+            return (majorIndex * Program.colorMapMinor.Length) + (minorIndex + 1);
         }
         
      }
