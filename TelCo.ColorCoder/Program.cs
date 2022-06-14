@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Diagnostics;
 using System.Drawing;
+using Print_Table;
 namespace TelCo.ColorCoder
 {
     /// <summary>
@@ -15,11 +16,11 @@ namespace TelCo.ColorCoder
         /// <summary>
         /// Array of Major colors
         /// </summary>
-        private static Color[] colorMapMajor;
+        Internal static Color[] colorMapMajor;
         /// <summary>
         /// Array of minor colors
         /// </summary>
-        private static Color[] colorMapMinor;
+        Internal static Color[] colorMapMinor;
         /// <summary>
         /// data type defined to hold the two colors of clor pair
         /// </summary>
@@ -135,8 +136,9 @@ namespace TelCo.ColorCoder
         /// <param name="args"></param>
         private static void Main(string[] args)
         {
-            Program MyClass = new Program();
-            MyClass.Print_table();
+            //Program MyClass = new Program();
+            //MyClass.Print_table();
+            Print_Table Table = new Print_Table();
 
             int pairNumber = 4;
             ColorPair testPair1 = Program.GetColorFromPairNumber(pairNumber);
