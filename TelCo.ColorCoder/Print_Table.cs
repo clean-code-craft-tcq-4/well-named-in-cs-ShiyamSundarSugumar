@@ -3,7 +3,7 @@ using System.Diagnostics;
 using System.Drawing;
 namespace TelCo.ColorCoder
 {
-  Class Print_Table
+  internal Class Print_Table
   {
       internal void Table()
       {
