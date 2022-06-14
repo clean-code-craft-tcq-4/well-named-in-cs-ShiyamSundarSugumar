@@ -111,40 +111,32 @@ namespace TelCo.ColorCoder
             // (Note: +1 in compute is because pair number is 1 based, not zero)
             return (majorIndex * colorMapMinor.Length) + (minorIndex + 1);
         }
-        /// <summary>
-        /// Test code for the class
-        /// </summary>
-        /// <param name="args"></param>
-        /// 
+
+        
 
         void Print_table()
         {
-            int MajorLength = 0, MinorLength = 0;
-
+            int MajorLength = 0, MinorLength = 0,index = 1;
             MajorLength = colorMapMajor.Length;
             MinorLength = colorMapMinor.Length;
-            int index = 1;
             Console.WriteLine("| Index \t  | MajorColor\t\t\t  | MinorColor\t\t\t  |");
-            for (int i = 0; i < MajorLength; i++)
+            for (int i = 0,j = 0; i < MajorLength; i++)
             {
-                int j = 0;
                 for (; j < MinorLength; j++)
                 {
                     Console.WriteLine("| {0}\t  | {1} \t\t  | {2} \t\t  |", index, colorMapMajor[i], colorMapMinor[j]);
                     index++;
                 }
             }
-
-
         }
+        /// <summary>
+        /// Test code for the class
+        /// </summary>
+        /// <param name="args"></param>
         private static void Main(string[] args)
         {
             Program MyClass = new Program();
-            ColorPair testPair = new ColorPair();
-
             MyClass.Print_table();
-
-
 
             int pairNumber = 4;
             ColorPair testPair1 = Program.GetColorFromPairNumber(pairNumber);
