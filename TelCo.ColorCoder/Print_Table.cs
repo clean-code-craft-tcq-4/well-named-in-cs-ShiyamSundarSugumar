@@ -12,8 +12,9 @@ namespace TelCo.ColorCoder
           MinorLength = colorMapMinor.Length;
           Console.WriteLine("{0}   {1}",MajorLength, MinorLength);
           Console.WriteLine("| Index \t  | MajorColor\t\t\t  | MinorColor\t\t\t  |");
-          for (int i = 0,j = 0; i < MajorLength; i++)
+          for (int i = 0; i < MajorLength; i++)
           {
+              j=0;
               for (; j < MinorLength; j++)
               {
                   Console.WriteLine("| {0}\t  | {1} \t\t  | {2} \t\t  |", index, colorMapMajor[i], colorMapMinor[j]);
