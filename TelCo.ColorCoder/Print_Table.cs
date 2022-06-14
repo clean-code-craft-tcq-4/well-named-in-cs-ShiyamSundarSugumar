@@ -5,7 +5,7 @@ namespace TelCo.ColorCoder
 {
   internal class Print_Table
   {
-      internal void Table()
+      internal void Table(Color[] colorMapMajor, Color[] colorMapMinor)
       {
           int MajorLength = 0, MinorLength = 0,index = 1;
           MajorLength = colorMapMajor.Length;
