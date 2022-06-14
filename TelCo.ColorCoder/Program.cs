@@ -11,7 +11,7 @@ namespace TelCo.ColorCoder
     /// This class provides the color coding and 
     /// mapping of pair number to color and color to pair number.
     /// </summary>
-    class Program
+    public class Program
     {
         /// <summary>
         /// Array of Major colors
@@ -141,7 +141,10 @@ namespace TelCo.ColorCoder
             Console.WriteLine(colorMapMajor[0].ToString());
             Print_Table MyTable = new Print_Table();
             MyTable.Table(colorMapMajor,colorMapMinor);
-
+            
+            
+            /*
+            
             int pairNumber = 4;
             ColorPair testPair1 = Program.GetColorFromPairNumber(pairNumber);
             Console.WriteLine("[In]Pair Number: {0},[Out] Colors: {1}\n", pairNumber, testPair1);
@@ -169,6 +172,8 @@ namespace TelCo.ColorCoder
             pairNumber = Program.GetPairNumberFromColor(testPair2);
             Console.WriteLine("[In]Colors: {0}, [Out] PairNumber: {1}", testPair2, pairNumber);
             Debug.Assert(pairNumber == 6);
+            
+            */
         }
     }
 }
