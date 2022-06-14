@@ -4,9 +4,9 @@ using System.Drawing;
 
 namespace TelCo.ColorCoder
 {
-  class Main_Test_case
+  public class Main_Test_case
   {
-    void Test_case()
+    internal void Test_case()
     {
       int pairNumber = 4;
       ColorPair testPair1 = Program.GetColorFromPairNumber(pairNumber);
