@@ -18,7 +18,7 @@ namespace TelCo.ColorCoder
         internal class ColorPair
         {
             internal Color majorColor,minorColor;
-            internal override string ToString()
+            public override string ToString()
             {
                 return string.Format("MajorColor:{0}, MinorColor:{1}", majorColor.Name, minorColor.Name);
             }
