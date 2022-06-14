@@ -136,7 +136,7 @@ namespace TelCo.ColorCoder
         /// <param name="args"></param>
         private static void Main(string[] args)
         {
-            //Program MyClass = new Program();
+            Program MyClass = new Program();
             //MyClass.Print_table();
             Print_Table MyTable = new Print_Table();
             MyTable.Table();
