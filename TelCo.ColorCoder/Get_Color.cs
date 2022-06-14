@@ -6,7 +6,7 @@ namespace TelCo.ColorCoder
 {
   public class Get_Color
   {
-     internal static ColorPair GetColorFromPairNumber(int pairNumber)
+     internal static Program.ColorPair GetColorFromPairNumber(int pairNumber)
         {
             // The function supports only 1 based index. Pair numbers valid are from 1 to 25
             int minorSize = colorMapMinor.Length;
@@ -23,7 +23,7 @@ namespace TelCo.ColorCoder
             int minorIndex = zeroBasedPairNumber % minorSize;
 
             // Construct the return val from the arrays
-            ColorPair pair = new ColorPair()
+            Program.ColorPair pair = new Program.ColorPair()
             {
                 majorColor = colorMapMajor[majorIndex],
                 minorColor = colorMapMinor[minorIndex]
