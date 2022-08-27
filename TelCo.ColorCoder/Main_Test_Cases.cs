@@ -35,7 +35,7 @@ namespace TelCo.ColorCoder
       */
       
       pairNumber = 18;
-      GetPairNumberFromColorTestCase(Color.Yellow,Color.Green,pairNumber)
+      GetPairNumberFromColorTestCase(Color.Yellow,Color.Green,pairNumber);
 
       /*
       testPair2 = new Program.ColorPair() { majorColor = Color.Red, minorColor = Color.Blue };
@@ -44,7 +44,7 @@ namespace TelCo.ColorCoder
       Debug.Assert(pairNumber == 6);
       */
       pairNumber = 6;
-      GetPairNumberFromColorTestCase(Color.Red,Color.Blue,pairNumber)
+      GetPairNumberFromColorTestCase(Color.Red,Color.Blue,pairNumber);
 
     }
     public static void GetColorFromPairNumberTestCase(int pairNumber, Color First_Color, Color Second_Color)
