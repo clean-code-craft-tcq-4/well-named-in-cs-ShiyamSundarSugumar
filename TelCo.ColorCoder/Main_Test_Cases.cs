@@ -37,7 +37,13 @@ namespace TelCo.ColorCoder
       Debug.Assert(pairNumber == 6);
 
     }
-
+    public static void Sub_Test_Case(int pairNumber, Color First_Color, Color Second_Color)
+    {
+      Program.ColorPair testPair1 = Get_Color.GetColorFromPairNumber(pairNumber);
+      Console.WriteLine("[In]Pair Number: {0},[Out] Colors: {1}\n", pairNumber, testPair1);
+      Debug.Assert(testPair1.majorColor == First_Color);
+      Debug.Assert(testPair1.minorColor == Second_Color);
+    }
   }
 
 }
