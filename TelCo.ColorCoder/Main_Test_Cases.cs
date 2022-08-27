@@ -21,10 +21,13 @@ namespace TelCo.ColorCoder
       Debug.Assert(testPair1.minorColor == Color.SlateGray);
 
       pairNumber = 23;
+      /*
       testPair1 = Get_Color.GetColorFromPairNumber(pairNumber);
       Console.WriteLine("[In]Pair Number: {0},[Out] Colors: {1}\n", pairNumber, testPair1);
       Debug.Assert(testPair1.majorColor == Color.Violet);
       Debug.Assert(testPair1.minorColor == Color.Green);
+      */
+      Sub_Test_Case(pairNumber,Color.Violet,Color.Green);
 
       Program.ColorPair testPair2 = new Program.ColorPair() { majorColor = Color.Yellow, minorColor = Color.Green };
       pairNumber = Get_PairNumber.GetPairNumberFromColor(testPair2);
